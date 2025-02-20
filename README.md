@@ -12,3 +12,4 @@ apt-get install ngnix
 apt update && apt install -y nginx
 
 ls -lh(about this command)
+apt-get install vim for file edit
