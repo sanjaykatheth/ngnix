@@ -1,15 +1,26 @@
-# ngnix
+Nginx with Docker
+```
+Step 1: Run an Ubuntu Container
+docker run -it -p 8080:80 ubuntu
 
-# first 
-  step1: docker run -it -p 8080:80 ubuntu
-It runs an interactive Ubuntu container, mapping port 8080 (host) to 80 (container), but since Ubuntu lacks a web server, nothing serves on port 8080 by default.
+```
+Step 2: Update and Install Nginx
 
-#uname
-
-apt-get update
-apt-get install ngnix
-
+```
 apt update && apt install -y nginx
+```
+Step 3: Verify Installation
+```
+uname -a
+ls -lh  Lists files in the current directory
+```
 
-ls -lh(about this command)
-apt-get install vim for file edit
+Step 4: Install Vim (for Editing Files)
+```
+apt install -y vim
+```
+Step 5: Access the Running Container
+```
+docker exec -it <container_name_or_id> /bin/bash
+Replace <container_name_or_id> with the actual container’s name or ID.
+```
