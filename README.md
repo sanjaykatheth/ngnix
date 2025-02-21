@@ -47,6 +47,7 @@ events {
 }
 type {
   text/css css;
+  text/html html;
 }
 http {
 
