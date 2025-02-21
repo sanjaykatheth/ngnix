@@ -30,3 +30,14 @@ netstat -ano | findstr :8080
 Look for the PID (Process ID) in the last column. Then, stop the process using:
 taskkill /PID <PID> /F
 ```
+Check if Vim is still running:
+```
+ps aux | grep vim
+kill -9 <PID>
+Delete the swap file:
+rm -f /etc/nginx/.nginx.conf.swp
+```
+Open nginx.conf again in Vim:
+```
+vim /etc/nginx/nginx.conf
+```
