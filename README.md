@@ -41,14 +41,19 @@ Open nginx.conf again in Vim:
 ```
 vim /etc/nginx/nginx.conf
 ```
-nginx configuration
+nginx configuration basic configuration
 ```
 events {
 }
+
+either
 type {
   text/css css;
   text/html html;
 }
+or
+include /etc/nginx/mime.type
+
 http {
 
         server {
