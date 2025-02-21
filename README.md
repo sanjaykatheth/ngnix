@@ -24,3 +24,9 @@ Step 5: Access the Running Container
 docker exec -it <container_name_or_id> /bin/bash
 Replace <container_name_or_id> with the actual container’s name or ID.
 ```
+Option 2: Find and Free the Port
+```
+netstat -ano | findstr :8080
+Look for the PID (Process ID) in the last column. Then, stop the process using:
+taskkill /PID <PID> /F
+```
