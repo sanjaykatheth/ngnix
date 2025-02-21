@@ -41,3 +41,20 @@ Open nginx.conf again in Vim:
 ```
 vim /etc/nginx/nginx.conf
 ```
+nginx configuration
+```
+events {
+}
+type {
+  text/css css;
+}
+http {
+
+        server {
+             listen 80;
+             server_name _;
+             root /etc/nginx/website;
+        }
+
+}
+```
